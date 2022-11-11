@@ -1,0 +1,39 @@
+@import '../../../styles/resources.scss';
+
+@mixin border-box($border-top, $px) {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    @if ($border-top) {
+        border-top: $px;
+    }
+    width: 498px;
+    margin-bottom: 10px;
+}
+
+.movieRankGood {
+    color: blue;
+}
+
+.movieRankSoso {
+    color: orange;
+}
+
+.movieRankBad {
+    color: red;
+}
+
+.torrent {
+    display: block;
+    color: gray;;
+}
+
+.movieDetail {
+    @include border-box(true, 0);
+}
+
+.coopyUrl {
+    font-size: $font-small;
+    color: $color-gray;
+}

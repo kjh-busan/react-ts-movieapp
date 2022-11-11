@@ -1,0 +1,15 @@
+@import '../../styles/resources.scss';
+
+.movieTitle {
+    display: $movieTitle_display_color;
+    text-decoration: none;
+    color: $movieTitle_display_color;
+    border: 1px solid $color_gray;
+    border-bottom: 0px;
+    width: 498px;
+    margin-top: 20px;
+}
+
+.movieTitle:hover {
+    background: $color_gray;
+}
